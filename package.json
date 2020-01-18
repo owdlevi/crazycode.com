@@ -15,9 +15,11 @@
     "@mdx-js/react": "^1.5.5",
     "gatsby": "^2.18.23",
     "gatsby-plugin-theme-ui": "^0.2.53",
+    "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-particles-js": "^2.7.0",
+    "react-stickynode": "^2.1.1",
     "theme-ui": "^0.2.52"
   }
 }

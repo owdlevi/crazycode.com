@@ -1,21 +1,12 @@
 import React from 'react'
-import { Global } from '@emotion/core'
-import { Styled , Main, useColorMode, jsx, css } from 'theme-ui'
+import CrazyCode from '../components/Layout'
 
-const Layout = () => {
-  const [mode, setMode] = useColorMode()
-  const toggleMode = () => {
-    setMode(mode === 'dark' ? 'light' : 'dark')
-  }
-
-
+const Index = () => {
   return (
-    <>
-      <Styled.root>
-          CrazyCode.com Start
-      </Styled.root>
-    </>
+    <CrazyCode>
+      
+    </CrazyCode>
   )
 }
 
-export default Layout
+export default Index
