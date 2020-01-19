@@ -1,24 +1,19 @@
-import React from 'react'
-import { Styled , Main, useColorMode } from 'theme-ui'
-import ResetCSS from './resetCSS'
-import Header from '../Header'
+/** @jsx jsx */
+import { Layout, Main, jsx } from "theme-ui";
+import Header from "../Header";
+import Footer from "../Footer";
+import ResetCSS from "./resetCSS";
 
-const CrazyCode = () => {
-  const [mode, setMode] = useColorMode()
-  const toggleMode = () => {
-    setMode(mode === 'dark' ? 'light' : 'dark')
-  }
-
-
+const CrazyCode = ({ children }) => {
   return (
-    <>
+    <Layout>
       <ResetCSS />
-      <Styled.root>
-        <Header />
-          CrazyCode.com Start
-      </Styled.root>
-    </>
-  )
-}
 
-export default CrazyCode
+      <Header />
+      <Main>{children}</Main>
+      <Footer>This is the footer</Footer>
+    </Layout>
+  );
+};
+
+export default CrazyCode;
