@@ -115,10 +115,6 @@ const ResetCSS = () => {
           border-top: 1px solid #c6cbd1;
         }
       
-        table tr:nth-child(2n) {
-          background-color: #f6f8fa;
-        }
-      
         table th{
           font-weight: 500;
         }
@@ -143,7 +139,12 @@ const ResetCSS = () => {
               }
             }
           }
-          
+        }
+        .particles-container{
+          div{
+            width: 100%;
+            height: 100%;
+          }
         }
         `}
       />

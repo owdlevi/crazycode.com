@@ -8,10 +8,9 @@ const CrazyCode = ({ children }) => {
   return (
     <Layout>
       <ResetCSS />
-
       <Header />
       <Main>{children}</Main>
-      <Footer>This is the footer</Footer>
+      <Footer />
     </Layout>
   );
 };

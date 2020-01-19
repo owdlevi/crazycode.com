@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, useColorMode } from "theme-ui";
+import { jsx, useColorMode } from "theme-ui";
 import Sticky from "react-stickynode";
 import { Link } from "gatsby";
 import Logo from "./Logo";
@@ -10,10 +10,7 @@ import moon from "../../content/assets/moon.png";
 
 const Header = () => {
   const iconCss = [
-    css({
-      pointerEvents: `none`
-    }),
-    { margin: 4 } // Explicitly leave margin out of theme-ui, this positioning should not change based on theme
+    { margin: 4 } 
   ];
 
   const checkedIcon = (

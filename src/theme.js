@@ -3,7 +3,7 @@ const theme = {
     text: '#000',
     background: '#fff',
     primary: '#000',
-    containerbg: '#fafafa',
+    containerbg: '#fff',
     shadow: 'rgba(0, 0, 0, .08)',
     logo: '#c00',
     footer: '#e2e2e2',

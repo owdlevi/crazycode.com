@@ -1,8 +1,11 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
-import Particles from "react-particles-js";
+import { jsx, Styled, useColorMode } from "theme-ui";
+import Particle from './Particle'
 
 const Hero = () => {
+  const [colorMode, setColorMode] = useColorMode();
+  const particleColor = (colorMode === "light") ? `#000000` : `#ffffff`
+  console.log(particleColor)
   return (
     <div
       sx={{
@@ -15,7 +18,7 @@ const Hero = () => {
         flexFlow: "column"
       }}
     >
-      <div
+      <div className="particles-container"
         sx={{
           position: "absolute",
           top: "0",
@@ -25,31 +28,7 @@ const Hero = () => {
           display: ["none", "block"]
         }}
       >
-        <Particles
-          width="100%"
-          height="100%"
-          params={{
-            particles: {
-              number: {
-                value: 80
-              },
-              size: {
-                value: 3
-              }
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "repulse"
-                }
-              }
-            },
-            color: {
-              value: "#000000"
-            }
-          }}
-        />
+        <Particle color={particleColor}/>
       </div>
       <div
         sx={{
