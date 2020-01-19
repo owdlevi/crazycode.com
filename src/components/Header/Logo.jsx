@@ -5,6 +5,7 @@ const Logo = () => {
   return (
     <svg sx={{
       height: '30px',
+  
     }}
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.4 38">
       <defs>

@@ -56,7 +56,7 @@ const Header = () => {
           py: 3,
           gridAutoFlow: "row",
           backgroundColor: "background",
-          gridTemplateColumns: ["repeat(2, 1fr)", "repeat(3, 1fr)"],
+          gridTemplateColumns: ["repeat(3, 1fr)", "repeat(3, 1fr)"],
           boxShadow: theme => `0 0 15px ${theme.colors.shadow}`
         }}
       >
@@ -89,7 +89,8 @@ const Header = () => {
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "flex-start"
+            justifyContent: "flex-start",
+            display: ["none","flex"],
           }}
         >
           <Link
