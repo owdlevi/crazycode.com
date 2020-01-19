@@ -48,7 +48,7 @@ const Hero = () => {
             textAlgin: "center"
           }}
         >
-          Hey there I’m David and I started to build this cool website.
+          Hey there! I’m David and I started to build this cool website.
           <br />
           Come back every day to check my progress.
         </span>
