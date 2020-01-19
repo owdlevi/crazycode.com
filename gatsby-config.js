@@ -1,5 +1,19 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-theme-ui`
+    `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Crazy Code`,
+        short_name: `Crazy Code`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#000000`,
+        display: `minimal-ui`,
+        icon: `src/content/assets/favicon.svg`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
