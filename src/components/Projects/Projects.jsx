@@ -1,20 +1,23 @@
 /** @jsx jsx */
 import { jsx, Styled, Container } from "theme-ui";
+import featuredImage from '../../content/assets/placeholder2.jpg'
+import Card from '../Card/Card'
 
 const Projects = () => {
   const project = {
     name: 'Test Project',
     slug: 'projects/test-project',
     tags: ['raspberyPI', 'electron', 'react'],
-    featuredImage: 'featuredimage',
+    featuredImage: '../../content/assets/placeholder.jpg',
   }
 
   const projectList = [project, project, project, project, project]
   return (
     <section>
       <Container sx={{
-        backgroundColor: 'secondatyBG',
-        py: [3,4,5]
+        backgroundColor: 'secondaryBG',
+        py: [3,4,5],
+        maxWidth: '1400px',
       }}>
         <Styled.h2 sx={{
           textAlign: 'center',
@@ -35,15 +38,7 @@ const Projects = () => {
           {
             projectList.map((projectItem) => {
               return(
-                <div sx={{
-                  width: 'calc(100%/3 - 40px/3)',
-                  backgroundColor: 'primary',
-                  height: '300px',
-                  marginBottom: '20px',
-                }}
-                >
-                  {projectItem.name}
-                </div>
+               <Card image={featuredImage} />
               )
             })
           }

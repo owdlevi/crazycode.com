@@ -4,7 +4,7 @@ const theme = {
     background: '#fff',
     primary: '#000',
     containerbg: '#fff',
-    secondatyBG: 'E8E8E8',
+    secondaryBG: 'E8E8E8',
     shadow: 'rgba(0, 0, 0, .08)',
     logo: '#c00',
     footer: '#e2e2e2',
@@ -14,7 +14,7 @@ const theme = {
         background: '#000',
         primary: '#fff',
         containerbg: '#000',
-        secondatyBG: '080808',
+        secondaryBG: '080808',
         shadow: 'rgba(255, 255, 255, 0.2)',
         footer: '#212121',
       }
