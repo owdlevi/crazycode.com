@@ -1,18 +1,21 @@
 
 .card {
-  width: 48%;
-  height: 600px;
+  width: calc(100%/3 - 40px/3);
+  height: 400px;
   margin-bottom: 40px;
   background: grey;
   border-radius: 5px;
-  background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
+  /* background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid white;
   overflow: hidden;
+  cursor: pointer;
+}
+.newCard{
+
 }
 
 .card:hover {

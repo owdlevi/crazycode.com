@@ -6,6 +6,7 @@ const theme = {
     containerbg: '#fff',
     secondaryBG: 'E8E8E8',
     shadow: 'rgba(0, 0, 0, .08)',
+    bgTransparent:  'rgba(255, 255, 255, 0.6)',
     logo: '#c00',
     footer: '#e2e2e2',
     modes: {
@@ -15,6 +16,7 @@ const theme = {
         primary: '#fff',
         containerbg: '#000',
         secondaryBG: '080808',
+        bgTransparent:  'rgba(0, 0, 0, 0.6)',
         shadow: 'rgba(255, 255, 255, 0.2)',
         footer: '#212121',
       }
