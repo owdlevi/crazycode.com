@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useColorMode } from "theme-ui";
+import { jsx, Styled } from "theme-ui";
 import { useSpring, animated } from "react-spring";
 import "./styles.css";
 
@@ -26,31 +26,37 @@ const Card = ({ project }) => {
     >
       <div
         sx={{
-          height: "100%",
+          height: "500px",
+          width: "100%",
           overflow: "hidden",
-          position: "relative"
+          position: "relative",
         }}
       >
         <img src={project.featuredImage} alt="" />
-        <div
-          sx={{
-            backgroundColor: "primary",
-            height: "20%",
-            width: "100%",
-            zIndex: "123",
-            bottom: "0",
-            left: "0",
-            position: "absolute",
-            backgroundColor: "bgTransparent",
-            display: "flex",
-            justifyContent: "center",
-            verticalAlign: "middle",
-            paddingTop: "20px",
-            // boxShadow: '2px -2px 16px 3px ${theme.colors.shadow},
-            boxShadow: theme => `0 0 15px ${theme.colors.shadow}`
-          }}
-        >
-          <h3>{project.projectName}</h3>
+      </div>
+      <div sx={{
+        backgroundColor: 'footer',
+        color: 'primary',
+        display: 'flex',
+        flexFlow: 'row',
+        justifyContent: 'space-between',
+        verticalAlign: 'middle',
+        boxShadow: theme => `0 0 15px ${theme.colors.shadow}`,
+      }}>
+        <div sx={{
+          width: '100%',
+          padding: [2,3],
+          position: 'realtive',
+         
+        }}>
+          <h3 sx={{
+            width: '100%',
+            textAlign: 'center',
+            letterSpacing: '0.8px',
+            fontSize: [4],
+            fontWeight: '600',
+            paddingTop: [3]
+          }}>{project.projectName}</h3>
         </div>
       </div>
     </animated.div>
