@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, Container } from "theme-ui";
+import { jsx, Container } from "theme-ui";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           textAlign: "center"
         }}
       >
-        We have footer too :)
+        &copy; {new Date().getFullYear()} CrazyCode. All Rights Reserved.
       </Container>
     </footer>
   );

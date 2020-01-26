@@ -3,7 +3,7 @@ import { jsx, Styled, useColorMode } from "theme-ui";
 import Particle from './Particle'
 
 const Hero = () => {
-  const [colorMode, setColorMode] = useColorMode();
+  const [colorMode] = useColorMode();
   const particleColor = (colorMode === "light") ? `#000000` : `#ffffff`
   console.log(particleColor)
   return (
@@ -21,6 +21,7 @@ const Hero = () => {
       <div className="particles-container"
         sx={{
           position: "absolute",
+          pointerEvents: "none",
           top: "0",
           left: "0",
           width: "100%",

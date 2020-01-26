@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
+import { jsx } from "theme-ui";
 import { useSpring, animated } from "react-spring";
 import "./styles.css";
 
@@ -12,7 +12,6 @@ const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Card = ({ project }) => {
-  console.log(project);
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 }
