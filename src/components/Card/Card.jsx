@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
+import { Link } from 'gatsby'
 import { useSpring, animated } from 'react-spring'
 import './styles.css'
 

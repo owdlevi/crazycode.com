@@ -5,7 +5,7 @@ import Particle from './Particle'
 const Hero = () => {
   const [colorMode] = useColorMode()
   const particleColor = colorMode === 'light' ? `#000000` : `#ffffff`
-  console.log(particleColor)
+
   return (
     <div
       sx={{
@@ -46,9 +46,9 @@ const Hero = () => {
             my: 2,
             textAlgin: 'center'
           }}>
-          Hey there! I’m David and I started to build this cool website.
+          Hello World! My name is David I'm building this amazing website.
           <br />
-          Come back every day to check my progress.
+          Come back to check my progress.
         </span>
       </div>
     </div>
