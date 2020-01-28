@@ -10,7 +10,7 @@ import SEO from '../components/SEO'
 const Index = () => {
   return (
     <CrazyCode>
-      <SEO title="New website coming soon | CcrazyCode" 
+      <SEO title="New website coming soon | CrazyCode" 
       description="We are working on our new website. Stay tuned." />
       <Hero />
       <Stack />

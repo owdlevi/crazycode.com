@@ -1,22 +1,20 @@
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui";
+import { jsx, Container } from 'theme-ui'
 
 const Footer = () => {
   return (
     <footer
       sx={{
-        backgroundColor: "footer"
-      }}
-    >
+        backgroundColor: 'footer'
+      }}>
       <Container
         sx={{
-          textAlign: "center"
-        }}
-      >
+          textAlign: 'center'
+        }}>
         &copy; {new Date().getFullYear()} CrazyCode. All Rights Reserved.
       </Container>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

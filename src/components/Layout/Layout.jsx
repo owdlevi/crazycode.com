@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { Layout, Main, jsx } from "theme-ui";
-import Header from "../Header";
-import Footer from "../Footer";
-import ResetCSS from "./resetCSS";
+import { Layout, Main, jsx } from 'theme-ui'
+import Header from '../Header'
+import Footer from '../Footer'
+import ResetCSS from './resetCSS'
 
 const CrazyCode = ({ children }) => {
   return (
@@ -12,7 +12,7 @@ const CrazyCode = ({ children }) => {
       <Main>{children}</Main>
       <Footer />
     </Layout>
-  );
-};
+  )
+}
 
-export default CrazyCode;
+export default CrazyCode
