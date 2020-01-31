@@ -68,7 +68,7 @@ const stackItems = [
   },
   {
     key: 12,
-    componentCard: <Amazonaws size={48} sx={{ marginRight: [2, 3] }} />
+    componentCard: <Amazonaws size={48} sx={{ marginRight: [1, 3] }} />
   }
 ]
 
@@ -96,6 +96,7 @@ const Stack = () => {
         sx={{
           display: 'flex',
           flexFlow: 'flex-row',
+          flexWrap: 'wrap',
           justifyContent: 'center'
         }}>
         <Waypoint

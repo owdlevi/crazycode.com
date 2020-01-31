@@ -15,6 +15,9 @@ const Card = ({ project }) => {
   return (
     <animated.div
       className="card"
+      sx={{
+        width: ['100%', '100%,', 'calc(100%/3 - 80px/3)']
+      }}
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}>
