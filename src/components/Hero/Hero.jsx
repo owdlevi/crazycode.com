@@ -4,7 +4,7 @@ import Particle from './Particle'
 
 const Hero = () => {
   const [colorMode] = useColorMode()
-  const particleColor = colorMode === 'light' ? `#000000` : `#ffffff`
+  const particleColor = (colorMode === 'default' || colorMode === 'light') ? `#000000` : `#ffffff`
 
   return (
     <div
