@@ -94,7 +94,7 @@ const CardDeck = () => {
           maxHeight: '470px',
           willChange: 'transform',
           borderRadius: '10px',
-          boxShadow: '0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3)',
+          boxShadow: '0 12.5px 20px 10px rgba(50, 50, 73, 0.1), 0 10px 10px -10px rgba(50, 50, 73, 0.3)',
           padding: '20px'
         }}>
         {divCards[i]}
@@ -117,7 +117,7 @@ const SpringCards = () => {
       <div
         sx={{
           backgroundColor: 'background',
-         
+
           width: '100%',
           height: '100%',
           cursor: 'url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png") 39 39, auto'

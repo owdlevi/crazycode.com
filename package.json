@@ -30,6 +30,7 @@
     "react-stickynode": "^2.1.1",
     "react-switch": "^5.0.1",
     "react-use-gesture": "latest",
+    "react-waypoint": "^9.0.2",
     "theme-ui": "^0.2.52",
     "validator": "^12.2.0"
   }

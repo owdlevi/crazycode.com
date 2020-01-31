@@ -12,19 +12,22 @@ const Projects = () => {
       projectName: 'Over2Goals',
       slug: 'projects/react-spring-cards',
       tags: ['raspberyPI', 'electron', 'react'],
-      featuredImage: featuredImage
+      featuredImage: featuredImage,
+      url: '/'
     },
     {
       projectName: 'Furculita si Cutit',
       slug: 'projects/react-spring-cards',
       tags: ['raspberyPI', 'electron', 'react'],
-      featuredImage: featuredImage2
+      featuredImage: featuredImage2,
+      url: '/'
     },
     {
       projectName: 'React Spring Cards',
       slug: 'projects/react-spring-cards',
       tags: ['raspberyPI', 'electron', 'react'],
-      featuredImage: featuredImage3
+      featuredImage: featuredImage3,
+      url: '/projects/react-spring-cards/'
     }
   ]
 
@@ -57,7 +60,7 @@ const Projects = () => {
             mx: '-10px'
           }}>
           {projectList.map(projectItem => {
-            return <Card project={projectItem} />
+            return <Card key={projectItem.projectName} project={projectItem} />
           })}
         </div>
       </Container>

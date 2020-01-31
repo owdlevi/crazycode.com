@@ -18,44 +18,46 @@ const Card = ({ project }) => {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}>
-      <div
-        sx={{
-          height: '500px',
-          width: '100%',
-          overflow: 'hidden',
-          position: 'relative'
-        }}>
-        <img src={project.featuredImage} alt="" />
-      </div>
-      <div
-        sx={{
-          backgroundColor: 'footer',
-          color: 'primary',
-          display: 'flex',
-          flexFlow: 'row',
-          justifyContent: 'space-between',
-          verticalAlign: 'middle',
-          boxShadow: theme => `0 0 15px ${theme.colors.shadow}`
-        }}>
+      <Link to={project.url}>
         <div
           sx={{
+            height: '500px',
             width: '100%',
-            padding: [2, 3],
-            position: 'realtive'
+            overflow: 'hidden',
+            position: 'relative'
           }}>
-          <h3
+          <img src={project.featuredImage} alt="" />
+        </div>
+        <div
+          sx={{
+            backgroundColor: 'footer',
+            color: 'primary',
+            display: 'flex',
+            flexFlow: 'row',
+            justifyContent: 'space-between',
+            verticalAlign: 'middle',
+            boxShadow: theme => `0 0 15px ${theme.colors.shadow}`
+          }}>
+          <div
             sx={{
               width: '100%',
-              textAlign: 'center',
-              letterSpacing: '0.8px',
-              fontSize: [4],
-              fontWeight: '600',
-              paddingTop: [3]
+              padding: [2, 3],
+              position: 'realtive'
             }}>
-            {project.projectName}
-          </h3>
+            <h3
+              sx={{
+                width: '100%',
+                textAlign: 'center',
+                letterSpacing: '0.8px',
+                fontSize: [4],
+                fontWeight: '600',
+                paddingTop: [3]
+              }}>
+              {project.projectName}
+            </h3>
+          </div>
         </div>
-      </div>
+      </Link>
     </animated.div>
   )
 }
