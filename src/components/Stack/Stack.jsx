@@ -78,7 +78,7 @@ const Stack = () => {
   return (
     <Container
       sx={{
-        backgroundColor: 'white',
+        backgroundColor: 'background',
         pt: [2, 4, 5],
         pb: 0,
         maxWidth: '1500px'

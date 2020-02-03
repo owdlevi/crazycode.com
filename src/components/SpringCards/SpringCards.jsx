@@ -4,46 +4,119 @@ import { jsx, Styled, useColorMode } from 'theme-ui'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
 import Logo from '../Header/Logo'
+import {
+  ReactJs,
+  NodeDotJs,
+  Graphql,
+  Javascript,
+  Html5,
+  Php,
+  StyledComponents,
+  Zeit,
+  Netlify,
+  NextDotJs,
+  Gatsby,
+  Amazonaws,
+  Amazonalexa,
+  Tailwindcss
+} from '@icons-pack/react-simple-icons'
 
-const Card = ({ title, answer }) => {
+const stackcards = [
+  {
+    key: 3,
+    componentCard: <ReactJs color="#61DAFB" size={48} />,
+    title: 'React',
+    description:
+      'React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.'
+  },
+
+  {
+    key: 4,
+    componentCard: <Gatsby color="#663399" size={48} />,
+    title: 'Gatsby',
+    description:
+      'Blazing fast modern site generator for React. Go beyond static sites: build blogs, ecommerce sites, full-blown apps, and more with Gatsby.'
+  },
+  {
+    key: 5,
+    componentCard: <NextDotJs size={48} />,
+    title: 'NextJS',
+    description: 'With Next.js, server rendering React applications has never been easier, no matter where your data is coming from.'
+  },
+  {
+    key: 10,
+    componentCard: <Netlify color="#00C7B7" size={48} />,
+    title: 'Netlify',
+    description:
+      'Netlify is a San Francisco-based cloud computing company that offers hosting and serverless backend services for static websites.'
+  },
+  {
+    key: 11,
+    componentCard: <Zeit size={48} />,
+    title: 'ZEIT',
+    description:
+      'ZEIT is the easiest way to deploy websites. Host your web projects with zero configuration, automatic SSL, and global CDN.'
+  },
+  {
+    key: 8,
+    componentCard: <NodeDotJs color="#339933" size={48} />,
+    title: 'Node.js',
+    description:
+      'Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. '
+  },
+  {
+    key: 1,
+    componentCard: <Javascript color="#F7DF1E" size={48} />,
+    title: 'JavaScript',
+    description:
+      'JavaScript often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification.'
+  },
+  {
+    key: 2,
+    componentCard: <Html5 color="#E34F26" size={48} />,
+    title: 'HTML5',
+    description:
+      'HTML5 is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.'
+  },
+  {
+    key: 6,
+    componentCard: <Tailwindcss color="#38B2AC" size={48} />,
+    title: 'Tailwind CSS ',
+    description:
+      'Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.'
+  },
+  {
+    key: 7,
+    componentCard: <Graphql color="#E10098" size={48} />,
+    title: 'GraphQL',
+    description:
+      'GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015.'
+  },
+  {
+    key: 9,
+    componentCard: <Php color="#777BB4" size={48} />,
+    title: 'PHP',
+    description: 'PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.'
+  },
+  {
+    key: 12,
+    componentCard: <Amazonaws size={48} />,
+    title: 'Amazon AWS',
+    description:
+      'Amazonaws (or Amazon Web Services) is a online cloud storage web service presented by Amazon, Inc. It provides computing power, database storage, applications and other IT resources.'
+  }
+]
+
+const Card = ({ stackcard }) => {
+  const { title, description, componentCard } = stackcard
   return (
-    <div>
-      <div sx={{ width: '200px', margin: '20px auto' }}>
-        <Logo />
-      </div>
-      <h2>{title}</h2>
-      <p>{answer}</p>
+    <div sx={{ padding: [2, 3] }}>
+      <div sx={{ textAlign: 'center' }}>{componentCard}</div>
+      <h2 sx={{ textAlign: 'center', mt: [3] }}>{title}</h2>
+      <p>{description}</p>
     </div>
   )
 }
-
-const divCards = [
-  <Card
-    title="301 Redirects"
-    answer="A 301 redirect is an instruction that tells a browser: “The requested page is no longer available at the URL you have, you’ll find it at this new new address”. The browser is then automatically redirected to this new URL and the desired, relocated content is displayed. This happens so quickly users rarely notice a page has been redirected."
-  />,
-  <Card
-    title="Ad Retargeting And Remarketing"
-    answer="Retargeting or remarketing refers to any advertising approach that advertises to potential customers after they have had a first encounter with a business’ website. Retargeting is made possible by introducing a tracking device called a “cookie” that assigns a unique ID to a visitor. This allows subsequent ads to be selected based on the visitor’s history."
-  />,
-  <Card
-    title="Alt Attributes, Alt Text & Alt Tags"
-    answer="The alt attribute is designed to provide alternative text in the case that the image cannot not be seen. An alt tag is placed in the code surrounding an image and is usually only visible when the image does not or cannot load. The main audience for this was, and still is, the visually impaired."
-  />,
-  <Card
-    title="Google Analytics"
-    answer="Google Analytics is a free web service that provides comprehensive statistics and analytical tools for SEO and marketing purposes. Analytics monitors traffic to a website and collects data on how visitors interact with the site. Data available through this service includes user demographics, behaviour and interaction, such as pageviews, bounce rate and average time spent on site. "
-  />,
-  <Card
-    title="Anchor Text"
-    answer="Anchor text is the descriptive text of an outbound link. It is clickable, and it’s readable to both the user and to search engines. How this link is described in the anchor text is considered to be one of the top three ranking factors, and remains an integral part of any content marketing or SEO campaign."
-  />,
-  <Card
-    title="Bounce Rate"
-    answer="Google Analytics defines bounce rate as the percentage of sessions in which a user left your site from the page through which they entered it, without interacting with it. Not only does a high bounce rate indicate that a business has lost a number of conversion opportunities, but there’s been evidence to suggest that high bounce rates can damage a website’s search visibility."
-  />
-]
-
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
 const from = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
@@ -52,7 +125,7 @@ const trans = (r, s) => `perspective(1500px) rotateX(0deg) rotateY(${r / 10}deg)
 
 const CardDeck = () => {
   const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
-  const [props, set] = useSprings(divCards.length, i => ({ ...to(i), from: from(i) })) // Create a bunch of springs using the helpers above
+  const [props, set] = useSprings(stackcards.length, i => ({ ...to(i), from: from(i) })) // Create a bunch of springs using the helpers above
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
   const bind = useDrag(({ args: [index], down, movement: [mx], distance, direction: [xDir], velocity }) => {
     const trigger = velocity > 0.2 // If you flick hard enough it should trigger the card to fly out
@@ -66,9 +139,10 @@ const CardDeck = () => {
       const scale = down ? 1.1 : 1 // Active cards lift up a bit
       return { x, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } }
     })
-    if (!down && gone.size === divCards.length) setTimeout(() => gone.clear() || set(i => to(i)), 600)
+    if (!down && gone.size === stackcards.length) setTimeout(() => gone.clear() || set(i => to(i)), 600)
   })
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
+  const index = stackcards.length - 1
   return props.map(({ x, y, rot, scale }, i) => (
     <animated.div
       key={i}
@@ -88,16 +162,16 @@ const CardDeck = () => {
         sx={{
           color: 'primary',
           backgroundColor: 'background',
-          width: '45vh',
-          maxWidth: '400px',
-          height: '85vh',
+          width: '300px',
+          maxWidth: '80%',
+          minHeight: '60vh',
           maxHeight: '470px',
           willChange: 'transform',
           borderRadius: '10px',
           boxShadow: '0 12.5px 20px 10px rgba(50, 50, 73, 0.1), 0 10px 10px -10px rgba(50, 50, 73, 0.3)',
           padding: '20px'
         }}>
-        {divCards[i]}
+        <Card stackcard={stackcards[index - i]} />
       </animated.div>
     </animated.div>
   ))
@@ -110,6 +184,7 @@ const SpringCards = () => {
         overscrollBehaviorY: 'contain',
         margin: '100px 0',
         padding: 0,
+        minHeight: '400px',
         width: '100%',
         userSelect: 'none',
         overflow: 'hidden'
