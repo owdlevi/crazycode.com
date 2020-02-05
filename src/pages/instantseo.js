@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React, { useState } from 'react'
 import { jsx, Container, Styled } from 'theme-ui'
 import CrazyCode from '../components/Layout'
 import SEO from '../components/SEO'

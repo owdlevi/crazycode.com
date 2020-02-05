@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import { React, useState } from 'react'
-import { jsx, Styled, useColorMode } from 'theme-ui'
+import { useState } from 'react'
+import { jsx } from 'theme-ui'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
-import Logo from '../Header/Logo'
 import {
   ReactJs,
   NodeDotJs,
@@ -11,13 +10,11 @@ import {
   Javascript,
   Html5,
   Php,
-  StyledComponents,
   Zeit,
   Netlify,
   NextDotJs,
   Gatsby,
   Amazonaws,
-  Amazonalexa,
   Tailwindcss
 } from '@icons-pack/react-simple-icons'
 
@@ -192,10 +189,9 @@ const SpringCards = () => {
       <div
         sx={{
           backgroundColor: 'background',
-
           width: '100%',
           height: '100%',
-          cursor: 'url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png") 39 39, auto'
+          cursor: 'url("/swipe-cursor.png") 39 39, auto'
         }}>
         <CardDeck />
       </div>

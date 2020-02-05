@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { jsx } from 'theme-ui'
 import isURL from 'validator/lib/isURL'
 import Raport from './Raport'

@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { useState } from 'react'
 import { jsx, Container, Styled } from 'theme-ui'
-import { useSpring, animated, config } from 'react-spring'
 import { Waypoint } from 'react-waypoint'
 import StackList from './StackList'
 import {
@@ -11,13 +10,11 @@ import {
   Javascript,
   Html5,
   Php,
-  StyledComponents,
   Zeit,
   Netlify,
   NextDotJs,
   Gatsby,
   Amazonaws,
-  Amazonalexa,
   Tailwindcss
 } from '@icons-pack/react-simple-icons'
 

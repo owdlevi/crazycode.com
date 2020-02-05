@@ -2,7 +2,6 @@ import React from 'react'
 import Particles from 'react-particles-js'
 
 const Particle = ({ color }) => {
-  
   return (
     <Particles
       retina_detect="false"
