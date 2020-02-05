@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.crazycode.com`
+  },
   plugins: [
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
@@ -11,16 +14,17 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/content/assets/favicon.svg`, // This path is relative to the root of the site.
-      },
+        icon: `src/content/assets/favicon.svg` // This path is relative to the root of the site.
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-156495634-1",
-        head: true,
+        trackingId: 'UA-156495634-1',
+        head: true
       }
     },
-    `gatsby-plugin-offline`,
-  ],
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`
+  ]
 }
