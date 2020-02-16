@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Styled, Container } from 'theme-ui'
 import featuredImage from '../../content/assets/over2goals.jpg'
-import featuredImage2 from '../../content/assets/furculitasicutit.jpg'
+import budapest from '../../content/assets/budapest.jpg'
 import featuredImage3 from '../../content/assets/spring_card.png'
 
 import Card from '../Card/Card'
@@ -16,16 +16,16 @@ const Projects = () => {
       url: '/'
     },
     {
-      projectName: 'Furculita si Cutit',
-      slug: 'projects/react-spring-cards',
-      tags: ['raspberyPI', 'electron', 'react'],
-      featuredImage: featuredImage2,
-      url: '/'
+      projectName: 'Gatsby Theme Budapest',
+      slug: 'projects/gatsby-theme-budapest',
+      tags: ['gatsby', 'budapest', 'react'],
+      featuredImage: budapest,
+      url: '/projects/gatsby-theme-budapest'
     },
     {
       projectName: 'React Spring Cards',
       slug: 'projects/react-spring-cards',
-      tags: ['raspberyPI', 'electron', 'react'],
+      tags: ['animation', 'react spring', 'react'],
       featuredImage: featuredImage3,
       url: '/projects/react-spring-cards/'
     }

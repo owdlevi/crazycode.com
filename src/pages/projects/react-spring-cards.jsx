@@ -22,6 +22,16 @@ const Index = () => {
         }}>
         Swipeable Cards with React Spring
       </Styled.h1>
+      <Styled.p
+        sx={{
+          textAlign: 'center',
+          maxWidth: '700px',
+          px: [2, 3],
+          mx: 'auto'
+        }}>
+        React component built with React Spring animation, based on the React Spring example. Easily customizable information swipeable
+        cards.
+      </Styled.p>
       <SpringCards />
     </CrazyCode>
   )

@@ -6,12 +6,13 @@ import Projects from '../components/Projects'
 import Stack from '../components/Stack'
 import SEO from '../components/SEO'
 
-
 const Index = () => {
   return (
     <CrazyCode>
-      <SEO title="New website coming soon | CrazyCode" 
-      description="We are working on our new website. Stay tuned." />
+      <SEO
+        title="Web Development with the latest technology stack | CrazyCode"
+        description="Chekout may latest React components and Gatsby demo websites."
+      />
       <Hero />
       <Stack />
       <Projects />

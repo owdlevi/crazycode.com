@@ -179,9 +179,9 @@ const SpringCards = () => {
     <div
       sx={{
         overscrollBehaviorY: 'contain',
-        margin: '100px 0',
+        margin: '100px 0 150px',
         padding: 0,
-        minHeight: '400px',
+        height: '400px',
         width: '100%',
         userSelect: 'none',
         overflow: 'hidden'
@@ -190,7 +190,7 @@ const SpringCards = () => {
         sx={{
           backgroundColor: 'background',
           width: '100%',
-          height: '100%',
+          height: '400px',
           cursor: 'url("/swipe-cursor.png") 39 39, auto'
         }}>
         <CardDeck />
