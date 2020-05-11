@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled, Container } from 'theme-ui'
-import featuredImage from '../../content/assets/over2goals.jpg'
+import featuredImage from '../../content/assets/peanut.png'
 import budapest from '../../content/assets/budapest.jpg'
 import featuredImage3 from '../../content/assets/spring_card.png'
 
@@ -8,13 +8,13 @@ import Card from '../Card/Card'
 
 const Projects = () => {
   const projectList = [
-    {
-      projectName: 'Over2Goals',
-      slug: 'projects/react-spring-cards',
-      tags: ['raspberyPI', 'electron', 'react'],
-      featuredImage: featuredImage,
-      url: '/'
-    },
+    // {
+    //   projectName: 'Over2Goals',
+    //   slug: 'projects/react-spring-cards',
+    //   tags: ['raspberyPI', 'electron', 'react'],
+    //   featuredImage: featuredImage,
+    //   url: '/'
+    // },
     {
       projectName: 'Gatsby Theme Budapest',
       slug: 'projects/gatsby-theme-budapest',
@@ -28,6 +28,13 @@ const Projects = () => {
       tags: ['animation', 'react spring', 'react'],
       featuredImage: featuredImage3,
       url: '/projects/react-spring-cards/'
+    },
+    {
+      projectName: "Peanut's 1st year",
+      slug: 'projects/gatsby-photo-timeline',
+      tags: ['gatsby', 'react', 'exif'],
+      featuredImage: featuredImage,
+      url: 'projects/gatsby-photo-timeline/'
     }
   ]
 
@@ -59,7 +66,7 @@ const Projects = () => {
             justifyContent: 'space-between',
             mx: '-10px'
           }}>
-          {projectList.map(projectItem => {
+          {projectList.map((projectItem) => {
             return <Card key={projectItem.projectName} project={projectItem} />
           })}
         </div>
