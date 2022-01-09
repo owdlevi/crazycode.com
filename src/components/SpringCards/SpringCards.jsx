@@ -5,13 +5,13 @@ import { useSprings, animated, interpolate } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
 import {
   ReactJs,
-  NodeDotJs,
+  Nodedotjs,
   Graphql,
   Javascript,
   Html5,
   Php,
   Netlify,
-  NextDotJs,
+  Nextdotjs,
   Gatsby,
   Amazonaws,
   Tailwindcss
@@ -35,7 +35,7 @@ const stackcards = [
   },
   {
     key: 5,
-    componentCard: <NextDotJs size={48} />,
+    componentCard: <Nextdotjs size={48} />,
     title: 'NextJS',
     description: 'With Next.js, server rendering React applications has never been easier, no matter where your data is coming from.'
   },
@@ -49,7 +49,7 @@ const stackcards = [
 
   {
     key: 8,
-    componentCard: <NodeDotJs color="#339933" size={48} />,
+    componentCard: <Nodedotjs color="#339933" size={48} />,
     title: 'Node.js',
     description:
       'Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. '

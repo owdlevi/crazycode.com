@@ -27,7 +27,7 @@ const Particle = ({ color }) => {
             animation: {
               h: {
                 enable: true,
-                speed: 20
+                speed: 120
               }
             }
           },
