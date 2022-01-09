@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { jsx, Container, Styled } from 'theme-ui'
 import { Waypoint } from 'react-waypoint'
 import StackList from './StackList'
-import { ReactJs, Graphql, Javascript, NextDotJs, Chakraui, Strapi, Vercel } from '@icons-pack/react-simple-icons'
+import { ReactJs, Graphql, Javascript, Nextdotjs, Chakraui, Strapi, Vercel } from '@icons-pack/react-simple-icons'
 
 const stackItems = [
   {
@@ -18,7 +18,7 @@ const stackItems = [
 
   {
     key: 3,
-    componentCard: <NextDotJs size={48} sx={{ marginRight: [2, 3] }} />
+    componentCard: <Nextdotjs size={48} sx={{ marginRight: [2, 3] }} />
   },
   {
     key: 4,

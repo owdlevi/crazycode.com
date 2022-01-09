@@ -1,5 +1,5 @@
 import React from 'react'
-import Particles from 'react-particles-js'
+import Particles from 'react-tsparticles'
 
 const Particle = ({ color }) => {
   return (
@@ -8,23 +8,60 @@ const Particle = ({ color }) => {
       width="100%"
       height="100%"
       params={{
+        fullScreen: false,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: 'push'
+            },
+            onHover: {
+              enable: true,
+              mode: 'repulse'
+            }
+          }
+        },
         particles: {
-          number: {
-            value: 80
-          },
-          size: {
-            value: 3
-          },
-          interactivity: {
-            events: {
-              onhover: {
+          color: {
+            value: color,
+            animation: {
+              h: {
                 enable: true,
-                mode: 'repulse'
+                speed: 20
               }
             }
           },
-          color: {
-            value: color
+          links: {
+            color: {
+              value: color
+            },
+            enable: true,
+            opacity: 0.4
+          },
+          move: {
+            enable: true,
+            outModes: {
+              bottom: 'out',
+              left: 'out',
+              right: 'out',
+              top: 'out'
+            },
+            speed: 6
+          },
+          number: {
+            density: {
+              enable: true
+            },
+            value: 80
+          },
+          opacity: {
+            value: 0.5
+          },
+          size: {
+            value: {
+              min: 0.1,
+              max: 3
+            }
           },
           shape: {
             type: 'star',
@@ -32,9 +69,6 @@ const Particle = ({ color }) => {
               width: 0,
               color: color
             }
-          },
-          line_linked: {
-            color: color
           }
         }
       }}></Particles>

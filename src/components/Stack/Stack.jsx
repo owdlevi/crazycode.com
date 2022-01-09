@@ -5,16 +5,17 @@ import { Waypoint } from 'react-waypoint'
 import StackList from './StackList'
 import {
   ReactJs,
-  NodeDotJs,
+  Nodedotjs,
   Graphql,
   Javascript,
   Html5,
   Php,
   Netlify,
-  NextDotJs,
+  Nextdotjs,
   Gatsby,
   Amazonaws,
-  Tailwindcss
+  Tailwindcss,
+  Vercel
 } from '@icons-pack/react-simple-icons'
 
 const stackItems = [
@@ -36,7 +37,7 @@ const stackItems = [
   },
   {
     key: 5,
-    componentCard: <NextDotJs size={48} sx={{ marginRight: [2, 3] }} />
+    componentCard: <Nextdotjs size={48} sx={{ marginRight: [2, 3] }} />
   },
   {
     key: 6,
@@ -48,7 +49,7 @@ const stackItems = [
   },
   {
     key: 8,
-    componentCard: <NodeDotJs color="#339933" size={48} sx={{ marginRight: [2, 3] }} />
+    componentCard: <Nodedotjs color="#339933" size={48} sx={{ marginRight: [2, 3] }} />
   },
   {
     key: 9,

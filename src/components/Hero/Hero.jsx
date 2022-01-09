@@ -36,7 +36,8 @@ const Hero = () => {
           display: 'flex',
           flexFlow: 'column',
           justifyContent: 'center',
-          textAlign: 'center'
+          textAlign: 'center',
+          zIndex: '1000'
         }}>
         <Styled.h1>Something cool is coming!</Styled.h1>
         <span
