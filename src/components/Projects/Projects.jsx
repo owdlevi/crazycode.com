@@ -3,18 +3,19 @@ import { jsx, Styled, Container } from 'theme-ui'
 import featuredImage from '../../content/assets/peanut.png'
 import budapest from '../../content/assets/budapest.jpg'
 import featuredImage3 from '../../content/assets/spring_card.png'
+import serviciiRomania from '../../content/assets/servicii-romania-landing.jpg'
 
 import Card from '../Card/Card'
 
 const Projects = () => {
   const projectList = [
-    // {
-    //   projectName: 'Over2Goals',
-    //   slug: 'projects/react-spring-cards',
-    //   tags: ['raspberyPI', 'electron', 'react'],
-    //   featuredImage: featuredImage,
-    //   url: '/'
-    // },
+    {
+      projectName: 'Servicii Romania',
+      slug: 'projects/nextjs-serviciiromania',
+      tags: ['nextjs', 'graphql', 'strapi'],
+      featuredImage: serviciiRomania,
+      url: '/projects/nextjs-serviciiromania'
+    },
     {
       projectName: 'Gatsby Theme Budapest',
       slug: 'projects/gatsby-theme-budapest',
@@ -44,6 +45,7 @@ const Projects = () => {
         sx={{
           backgroundColor: 'secondaryBG',
           py: [3, 4, 5],
+          px: [3, 4, 5],
           maxWidth: '1500px'
         }}>
         <Styled.h2

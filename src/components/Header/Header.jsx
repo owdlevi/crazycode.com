@@ -17,9 +17,11 @@ const Header = () => {
 
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
-  const toggleColorMode = e => {
+  const toggleColorMode = (e) => {
     setColorMode(isDark ? `light` : `dark`)
   }
+
+  console.log(isDark)
 
   return (
     <Sticky top={0} innerZ={9999} activeClass="nav-sticky">
@@ -34,7 +36,7 @@ const Header = () => {
           gridAutoFlow: 'row',
           backgroundColor: 'background',
           gridTemplateColumns: ['repeat(3, 1fr)', 'repeat(3, 1fr)'],
-          boxShadow: theme => `0 0 15px ${theme.colors.shadow}`
+          boxShadow: (theme) => `0 0 15px ${theme.colors.shadow}`
         }}>
         <div
           sx={{

@@ -11,7 +11,7 @@ const Index = () => {
     <CrazyCode>
       <SEO
         title="Web Development with the latest technology stack | CrazyCode"
-        description="Chekout may latest React components and Gatsby demo websites."
+        description="Checkout may latest React components and Gatsby demo websites."
       />
       <Hero />
       <Stack />

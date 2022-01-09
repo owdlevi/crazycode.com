@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer
       sx={{
-        backgroundColor: 'footer'
+        backgroundColor: 'footer',
+        py: [3]
       }}>
       <Container
         sx={{
