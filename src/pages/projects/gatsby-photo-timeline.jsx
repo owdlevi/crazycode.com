@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <CrazyCode>
       <SEO
-        title="Gatsby Photo Timeline - built with love & coffe | CrazyCode"
+        title="Gatsby Photo Timeline - built with love & coffee | CrazyCode"
         description="Amazing Photo timeline built for my favorite dog for her first birthday."
       />
       <div

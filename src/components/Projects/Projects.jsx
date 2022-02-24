@@ -4,11 +4,18 @@ import featuredImage from '../../content/assets/peanut.png'
 import budapest from '../../content/assets/budapest.jpg'
 import featuredImage3 from '../../content/assets/spring_card.png'
 import serviciiRomania from '../../content/assets/servicii-romania-landing.jpg'
-
+import customAutocomplete from '../../content/assets/custom-mui-autocomplete.jpg'
 import Card from '../Card/Card'
 
 const Projects = () => {
   const projectList = [
+    {
+      projectName: 'Autocomplete Material UI v4 component',
+      slug: 'projects/custom-autocomplete-material-ui-v4',
+      tags: ['v4', 'MUI', 'material-ui', 'react'],
+      featuredImage: customAutocomplete,
+      url: '/projects/custom-autocomplete-material-ui-v4'
+    },
     {
       projectName: 'Servicii Romania',
       slug: 'projects/nextjs-serviciiromania',

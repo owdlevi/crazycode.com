@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <CrazyCode>
       <SEO
-        title="Gatsby Theme Budapest - built with love & coffe | CrazyCode"
+        title="Gatsby Theme Budapest - built with love & coffee | CrazyCode"
         description="Gatsby Theme Budapest is simple and modern theme for blogging."
       />
       <div
