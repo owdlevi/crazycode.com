@@ -27,7 +27,7 @@ const Particle = ({ color }) => {
             animation: {
               h: {
                 enable: true,
-                speed: 120
+                speed: 60
               }
             }
           },
@@ -46,7 +46,7 @@ const Particle = ({ color }) => {
               right: 'out',
               top: 'out'
             },
-            speed: 6
+            speed: 4
           },
           number: {
             density: {

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, useColorMode } from 'theme-ui'
+import { jsx, Themed, useColorMode } from 'theme-ui'
 import Particle from './Particle'
 
 const Hero = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
           textAlign: 'center',
           zIndex: '1000'
         }}>
-        <Styled.h1>Something cool is coming!</Styled.h1>
+        <Themed.h1>Something cool is coming!</Themed.h1>
         <span
           sx={{
             fontSize: [3, 4, 5],

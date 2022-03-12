@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, Container } from 'theme-ui'
+import { jsx, Themed, Container } from 'theme-ui'
 import featuredImage from '../../content/assets/peanut.png'
 import budapest from '../../content/assets/budapest.jpg'
 import featuredImage3 from '../../content/assets/spring_card.png'
@@ -55,7 +55,7 @@ const Projects = () => {
           px: [3, 4, 5],
           maxWidth: '1500px'
         }}>
-        <Styled.h2
+        <Themed.h2
           sx={{
             textAlign: 'center',
             marginBottom: [3, 4],
@@ -63,7 +63,7 @@ const Projects = () => {
             fontWeight: [3]
           }}>
           Latest Projects
-        </Styled.h2>
+        </Themed.h2>
 
         <div
           className="projectList"

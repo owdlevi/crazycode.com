@@ -16,11 +16,12 @@ const Card = ({ project }) => {
     <animated.div
       className="card"
       sx={{
-        width: ['100%', '100%,', 'calc(100%/3 - 80px/3)']
+        width: ['100%', '100%,', 'calc(100%/3 - 80px/3)'],
+        height: '100%'
       }}
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: props.xys.interpolate(trans) }}>
+      style={{ transform: props.xys.to(trans) }}>
       <Link to={project.url}>
         <div
           sx={{
@@ -39,7 +40,7 @@ const Card = ({ project }) => {
             flexFlow: 'row',
             justifyContent: 'space-between',
             verticalAlign: 'middle',
-            boxShadow: theme => `0 0 15px ${theme.colors.shadow}`
+            boxShadow: (theme) => `0 0 15px ${theme.colors.shadow}`
           }}>
           <div
             sx={{
