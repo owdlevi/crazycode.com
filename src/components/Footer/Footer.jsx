@@ -12,7 +12,11 @@ const Footer = () => {
         sx={{
           textAlign: 'center'
         }}>
-        &copy; {new Date().getFullYear()} CrazyCode. All Rights Reserved.
+        &copy; {new Date().getFullYear()} CrazyCode. All Rights Reserved. {'    '}
+        <a href="https://onlinewebdesign.ro/" rel="follow">
+          Web development
+        </a>{' '}
+        by OWD.
       </Container>
     </footer>
   )
